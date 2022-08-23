@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        //  clipPath:{
+        //     mypolygon:"polygon(100% 0, 100% 64%, 85% 71%, 70% 66%, 57% 55%, 44% 45%, 28% 54%, 14% 64%, 0 76%, 0 0);",
+        //  },
+        //  Plugins:[
+        //    require('tailwind-clip-path')
+        //  ],
+        screens:{
+          sm:'450px',
+          md:'720px',
+          lg:'1044px',
+          xl:'1440px',
+        }
+        ,extend: {
+          colors: {
+            clifford: '#008060',
+            b:'#121110',
+            g:'#025943',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Project17</title>
+</head>
+<body class="space-y-10  scroll-m-0  flex flex-col md:space-y-8 ">
+  <header class="bg-clifford max-h-screen tracking-tight" >
+    <div class=" space-y-4 mx-auto md:space-y-6 "> 
+           <img src="logo.png"  class="mx-auto" alt="">
+           <h1 class="mx-auto text-2xl w-96 text-white  text-center md:text-5xl font-Roboto-500 font-bold md:w-1/2 md:mx-auto  leading-loose">Build your own ecommerce website in 3 easy steps</h1>
+           <p class="text-2xl text-center text-white md:text-3xl">
+            Shopify is trusted by millions of businesses worldwide</p>
+            <div class="  flex flex-row md:flex-row justify-center ">
+                <div class="w-1/2 mt-1 px-3 py-2 bg-clifford border shadow-sm border-clifford placeholder-slate-400  block md:w-1/4 rounded-md sm:text-sm focus:ring-1"">
+                <input type="email" name="email"
+                    class="px-8   mt-1 md:px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block md:w-full rounded-md sm:text-sm focus:ring-1"
+                    placeholder="you@example.com" /></div>
+                    <div class="md:px-8 py-3 bg-clifford font-semibold rounded-lg ">
+                    <button type="button" class="px-8 text-white md:px-8 py-2 bg-black font-semibold rounded-lg hover:bg-b hover:text-white md:bg-black-900  md:text-white mt-1 ">14-days free trail</button></div>
+            </div>
+            <p class="text-center sm:relative sm:bottom-6 text-xs text-white md:text-sm relative bottom-3">By entering your email, you agree to receive marketing emails from Shopify.</p>
+            <img src="pic1.png" class=" px-6 md:w-2/4 mx-auto" alt="">
+    </div>      
+  </header>
+  <br>
+  <section class="h-auto mx-auto my-auto">
+  <div class="mt-64 px-4 flex flex-col gap-8 md:flex-row md:mt-72 mb-20">
+    <div class="box space-y-4 ">
+        <img src="i2.svg" alt="" class="h-16 ">
+        <p class="font-bold">① Choose & customise a theme</p>
+        <p>Customize the design of your shop <br> from over thousands of themes.<br> No design experience or programming <br> skills required.</p>
+    </div>
+    <div class="box space-y-4"><img src="i2.svg" alt="" class="h-16 ">
+    <p class="font-bold">② Add products</p>
+    <p>Add your products to the shop. List your <br> eye-catching products with the best <br> photos, price and descriptions.</p></div>
+    <div class="box space-y-4"><img src="i3.webp" alt="" class="h-16 ">
+    <p class="font-bold">③ Start selling</p>
+    <p>Set up payments and shipping, and <br>start selling.</p></div>
+  </div>
+  </section>
+  <section class="space-y-6">
+    <img src="pic2.png" alt="" class="mx-auto">
+    <p class="text-2xl w-3/4 text-center mx-auto my-20 md:w-2/4 md:text-xl">“Shopify is the perfect solution for my ecommerce website, which both easy to build and easy to maintain.”</p>
+    <h5 class=" text-center mx-auto my-20 ">RIMJHIM HADA, FOUNDER OF AACHHO</h5>
+    <div class="mx-auto">
+    <button type="button"
+        class="mx-auto ml-40 md:ml-80 md:relative md:left-64 px-8 text-white md:px-8 py-4 bg-clifford font-semibold rounded-lg hover:bg-g hover:text-white md:bg-clifford  md:text-white mt-1 ">14-days
+        free trail</button></div>
+        <div class="text-clifford"></div>
+  </section>
+  <footer>
+    <div class="text-center flex flex-row gap-8 float-right md:mr-40 mb-2"><div class="text-clifford">Terms of Service</div>
+    <div class="text-clifford">Terms of Service</div></div>
+    
+    
+  </footer>
+</body>
+</html>
